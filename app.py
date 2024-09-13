@@ -11,7 +11,7 @@ class Home(Resource):
 class ConvertTemp(Resource):
     def get(self):
         # Get arguments from query parameters
-    #    temp = float(request.args.get('temp'))
+        temp = float(request.args.get('temp'))
         scale = request.args.get('scale').lower()
         target_scale = request.args.get('target_scale').lower()
 
